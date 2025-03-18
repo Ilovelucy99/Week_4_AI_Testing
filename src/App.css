@@ -1,0 +1,804 @@
+/*  ====================================================
+    START of React generated initial sample classes
+The following section, automatically created by React
+left purposely to credit its original author...  --CG
+*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
+    END of React generated initial sample classes
+    =============================================
+*/
+
+
+/*  ====================================================
+    START StreamList APP classes...
+    ALL StreamList class prefix >> ".CGsl-" --2/26/25 CG
+*/
+.CGsl-container {
+  background-color: #0f1111;
+}
+
+.CGsl-body {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  min-height: 100%;
+  background-color: #00050d;
+  margin: 0;
+  }
+
+.CGsl-paragraph {
+  background-color: royalblue;
+  font-family: NewTimesRoman;
+  border: 5px solid darkblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  width: max-content;
+  display: flex;
+  max-width: 90%;
+}
+
+.CGsl-button {
+  background-color: #0f1111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  border: 5px solid darkblue;
+  padding: 2px;
+  margin: 10px;
+  color: white;
+  width: max-content;
+  display: flexbox;
+  border: 1px solid #0f1111;
+  border-radius: 5%;
+}
+
+.CGsl-button:hover {
+  border: 1px solid white;
+  border-radius: 5%;
+}
+/*  Dodger's BLUE!!! >> optional
+  background-color: royalblue; 
+*/
+
+
+.CG-paragraph {
+  background-color: RoyalBlue;
+  font-family: NewTimesRoman;
+  border: 5px solid darkblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  width: max-content;
+  display: block;
+  display:inline-block;
+}
+  
+.CG-marquee {
+  display:flex;
+  background-color: RoyalBlue;
+  font-family: NewTimesRoman;
+  font-size:large;
+  color: white;
+  font-weight: bold;
+  border: 2px solid darkblue;
+  padding: 2px;
+  margin: 1px;
+  justify-content:space-evenly;
+  max-width: 100%;
+  flex-wrap:nowrap;
+  
+}
+
+.CG-marquee-box {
+  display:flexbox;
+  
+}
+
+.CG-marquee-image {
+  display: flexbox;
+  max-width: 10%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.StreamList {
+  color: lightblue;
+}
+/*
+    END of StreamList APP classes
+    =============================================
+*/
+
+
+.App-divcontainer {
+  max-width: 100%;
+  border: 0;
+  color: white;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  font-size: 16px;
+  margin: 0;
+  transition-duration: 0.4s;
+}
+/*
+  cursor: pointer;
+
+*/
+
+.App-div {
+  background-color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  flex-basis: 500px;
+  
+  border: 2px solid black;
+  margin: 1px;
+  padding: 5px;
+ /* 
+  width: max-content;
+/*  
+  font-size: small;
+*/
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.containerStyle {
+  background-color: #0f1111;
+  padding: '20px';
+  border-radius: '8px';
+  font-family: 'Arial, sans-serif';
+}
+
+.headingStyle {
+  color: '#333';
+  font-size: '24px';
+  margin-bottom: '10px';
+}
+
+.paragraphStyle {
+  color: '#666';
+  font-size: '16px';
+  line-height: '1.5';
+}
+
+
+  /* *** borrowed from group *** */
+  /* General Styles */
+body {
+  background-color: #232f3e; 
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #37475a;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* color: #ff9900; original orange */
+.navbar-links a:hover {
+  color: royalblue;
+}
+
+/* Product and Cart Section */
+.product-list, .cart {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  color: #232f3e;
+}
+
+.product-list:hover, .cart:hover {
+  transform: scale(1.02);
+}
+
+/* Product Cards */
+.product-card, .cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EZTech Phone Case Options */
+.phone-case-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.phone-case-options label {
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.phone-case-options label:hover {
+  background-color: #ff9900;
+  color: #232f3e;
+}
+
+/* Buttons */
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+/* background-color: #ff7518;  */
+button:hover {
+  background-color: royalblue;
+}
+
+/* Responsive Design for Different Screen Sizes */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-list, .cart {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar-links {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-list, .cart {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .product-card, .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .phone-case-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-case-options label {
+    width: 80%;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .navbar-links a {
+    display: block;
+    padding: 0.5rem;
+  }
+}
+/* CSS Variables for Reusability */
+:root {
+  --primary-bg-color: #ffffff; 
+  --secondary-bg-color: #37475a;
+  --accent-color: #ff9900;
+  --accent-hover-color: #ff7518;
+  --text-color: #080808;
+  --card-bg-color: #ffffff;
+  --card-hover-scale: 1.02;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transition-duration: 0.3s;
+  --padding-large: 2rem;
+  --padding-medium: 1.5rem;
+  --padding-small: 1rem;
+  --padding-xsmall: 0.5rem;
+  --font-size-large: 1rem;
+}
+
+/* General Styles */
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--padding-large);
+  justify-content: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: rgb(5, 244, 13);
+  font-weight: bold;
+}
+/* color: #ff5722; orange
+*/
+
+.nav-button {
+  background-color: rgb(51, 96, 233); 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: rgb(28, 74, 213); 
+}
+/* background-color: #e64a19;
+*/
+
+/* Product and Cart Section */
+.product-list, .cart {
+  flex: 1;
+  padding: var(--padding-medium);
+  background-color: var(--card-bg-color);
+  margin: var(--padding-xsmall);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-duration) ease-in-out;
+  color: #000000; 
+}
+
+.product-list:hover, .cart:hover {
+  transform: scale(var(--card-hover-scale));
+}
+
+/* Product Cards */
+.product-card, .cart-item {
+  background-color: #ffffff; 
+  color: #000000; 
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card:hover, .cart-item:hover {
+  background-color: #f3f3f3; 
+  color: #232f3e; 
+}
+
+
+/* Fix for EZTech Phone Case Options */
+.phone-case-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.phone-case-options label {
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background var(--transition-duration) ease-in-out;
+  font-size: var(--font-size-large);
+}
+
+.phone-case-options label:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--padding-xsmall) var(--padding-small);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background var(--transition-duration) ease-in-out;
+  font-size: var(--font-size-large);
+}
+
+button:hover {
+  background-color: var(--accent-hover-color);
+}
+
+/* Responsive Design for Different Screen Sizes */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: var(--padding-small);
+  }
+
+  .product-list, .cart {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar-links {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: var(--padding-small);
+  }
+
+  .product-list, .cart {
+    width: 95%;
+    padding: var(--padding-small);
+  }
+
+  .product-card, .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .phone-case-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phone-case-options label {
+    width: 80%;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: var(--padding-xsmall);
+  }
+
+  .navbar-links a {
+    display: block;
+    padding: var(--padding-xsmall);
+  }
+}
+
+/* Quantity Control Buttons */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-btn {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-display {
+  min-width: 30px;
+  text-align: center;
+}
+/* Credit Card Form Styling */
+.credit-card-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.credit-card-form h3 {
+  margin: 15px 0 10px;
+  color: #555;
+}
+
+.saved-cards-section, .new-card-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.saved-cards-list {
+  margin: 15px 0;
+}
+
+.saved-card-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.saved-card-option:hover {
+  background-color: #f0f0f0;
+}
+
+.card-selection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-expiry {
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.selected-card {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #e8f4fd;
+  border-radius: 5px;
+  border-left: 4px solid #4a90e2;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.use-card-btn, .add-card-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.use-card-btn:hover, .add-card-btn:hover {
+  background-color: #e64a19;
+}
+
+.remove-card-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.remove-card-btn:hover {
+  background-color: #d32f2f;
+}
