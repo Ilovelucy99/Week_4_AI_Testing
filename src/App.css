@@ -1,62 +1,175 @@
-/* src/App.css */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Header Styles - Updated Color Scheme */
+.CG-header {
+  background-color: #08223d; /* Changed to a more blue-gray color */
+  color: white;
+  padding: 1.5rem 0;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.App {
-  min-height: 100vh;
+.logo-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
-.main-content {
-  flex: 1;
-  padding: 20px 0;
-}
-
-.CGsl-paragraph {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.CGsl-paragraph h2 {
-  margin-bottom: 20px;
-  color: #2196f3;
-}
-
-.containerStyle {
-  text-align: center;
-  padding: 20px;
-}
-
-.containerStyle img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+.CG-logo {
+  height: 50px;
+  width: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+  box-shadow: 0 0 15px rgba(235, 58, 58, 0.6); /* Changed glow color to blue */
+  transition: transform 0.3s ease;
 }
-/* Add to src/App.css */
-.placeholder-page {
-  text-align: center;
-  padding: 50px 20px;
+
+.CG-logo:hover {
+  transform: scale(1.05);
+}
+
+.CG-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(90deg, #3498db, #2ecc71); /* Changed to blue-green gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.search-container {
+  display: flex;
+  margin: 1.5rem 0;
+  position: relative;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  border: 2px solid #34495e; /* Darker blue-gray */
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db; /* Changed to blue */
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.25); /* Blue glow */
+}
+
+.add-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  padding: 0 1.5rem;
+  background-color: #3498db; /* Changed to blue */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles - Updated to match new header */
+.main-navigation {
+  background-color: #34495e; /* Darker blue-gray for navigation */
+  padding: 0.75rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
-  color: #666;
+  padding: 0 1.5rem;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e6e6e6;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #3498db; /* Changed hover color to blue */
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .CG-title {
+    font-size: 1.8rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+  }
+  
+  .add-button {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .CG-logo {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+  
+  .CG-title {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
 }
