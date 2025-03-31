@@ -19,6 +19,15 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/serviceWorker.js')
       .then(registration => {
         console.log('ServiceWorker registration successful with scope:', registration.scope);
+        
+        // Check for updates on page load
+        registration.update();
+        
+        // Set up periodic updates
+        setInterval(() => {
+          registration.update();
+          console.log('Checking for service worker updates');
+        }, 60 * 60 * 1000); // Check every hour
       })
       .catch(error => {
         console.error('ServiceWorker registration failed:', error);

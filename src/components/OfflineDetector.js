@@ -1,7 +1,6 @@
 // src/components/OfflineDetector.js
-
 import React, { useState, useEffect } from 'react';
-import './OfflineDetector.css';
+import '../App.css';
 
 const OfflineDetector = () => {
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
@@ -25,8 +24,7 @@ const OfflineDetector = () => {
 
   return (
     <div className="offline-banner">
-      <span className="offline-icon">📶</span>
-      You are currently offline. Some features may be unavailable.
+      <span role="img" aria-label="offline">📶</span> You are currently offline. Some features may be unavailable.
     </div>
   );
 };
